@@ -14,4 +14,4 @@ python pseudo2python.py <yourpusedofilePath>
 
 ### Notes
 
-There is a python file called linkedlist utils, because the project was created to test linkedlists algorithms
+inside mappings there are linkedlist_functions, because the project was created to test linkedlists algorithms

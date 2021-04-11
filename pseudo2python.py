@@ -82,8 +82,7 @@ def get_pseudo_lines(filePath):
 
 def create_python_file(filePath, lines):
     file_name = Path(filePath).stem + "_python.py"
-    path_to_save = f"python_converted_files/{file_name}"
-    with open(path_to_save, 'w', encoding='utf8') as wf:
+    with open(file_name, 'w', encoding='utf8') as wf:
         for line in lines:
             print(line, file = wf)
 
