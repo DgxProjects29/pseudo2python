@@ -9,7 +9,7 @@ the code is experimental and may not work, pseudo-code has many variants and thi
 the file must be in txt format
 
 ```
-python pseudo2python.py <yourpusedofilePath>
+python pseudo2python.py <fileName>
 ```
 
 ### Notes
