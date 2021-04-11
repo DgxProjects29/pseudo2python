@@ -1,0 +1,20 @@
+SUB InsertarAntes (PTR, elem, dato)  	
+    anteP← Nulo	
+    P←PTR	
+    MQ ((Link(P)<>Nulo) && (Info(P) <>elem)) Haga
+        anteP←P		 
+        P←Link(P)  		
+    F_MQ
+    Si (Info(P) = elem) 
+        Obtener(Q)	
+        Info(Q)← dato 
+        Link(Q) ← P
+        Si (P=PTR)
+            PTR ← Q
+        Sino
+            Link(anteP)← Q 
+        Fin-Si
+    Si-no    
+        Escriba elem, "No existe en esta lista" 
+    F_Si
+FIN-SUB

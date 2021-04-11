@@ -1,0 +1,26 @@
+[
+  {
+    "pattern": "(sub|fun|subrutina) *(\\w+) *[(](.*)[)]",
+    "pyeq": "def \\2(\\3):"
+  },
+  {
+    "pattern": "(.+)(<-|←)(.+)",
+    "pyeq": "\\1 = \\3"
+  },
+  {
+    "pattern": "(escriba|esc) *(.+)",
+    "pyeq": "print ( \\2 )"
+  },
+  {
+    "pattern": "\\b(nulo)\\b",
+    "pyeq": "None"
+  },
+  {
+    "pattern": "(liberar)[(](\\w+[^\\s= ]*)[)]",
+    "pyeq": ""
+  },
+  {
+    "pattern": "\/\/",
+    "pyeq": "#"
+  }
+]

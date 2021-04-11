@@ -1,0 +1,7 @@
+{
+  "pattern": "(link|info|obtener)[(](\\w+[^\\s= ]*)[)]",
+  "": "",
+  "link": ".next",
+  "info": ".data",
+  "obtener": " = Node()"
+}

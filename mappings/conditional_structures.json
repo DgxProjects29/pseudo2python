@@ -1,0 +1,27 @@
+{
+  "boolean_exp": {
+    "=": "==",
+    "<>": "!=",
+    "< >": "!=",
+    "&&": "and",
+    "||": "or"
+  },
+
+  "cond_patterns": [
+    {
+      "pattern": "(si) *[(](.+)[)]",
+      "pyeq": "if (\\2):"
+    },
+    {
+      "pattern": "(mq) *[(](.+)[)]",
+      "pyeq": "while (\\2):"
+    }
+  ],
+
+  "exact_patterns": [
+    {
+      "pattern": "\\b(sino|si-no)\\b",
+      "pyeq": "else:"
+    }
+  ]
+}

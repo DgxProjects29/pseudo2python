@@ -1,0 +1,7 @@
+SUB Recorrer (PTR)
+	p ←  PTR
+	MQ (P < >  Nulo) Haga  
+		Escriba Info(p)
+		p ←Link(p) 
+	F_MQ
+F-SUB

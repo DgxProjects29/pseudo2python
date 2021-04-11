@@ -1,0 +1,18 @@
+SUB Invertir (PTR)
+    Si (Link(PTR) <> Nulo)
+        P←PTR // P, Inicialmente guarda la dirección del primer nodo
+        q←Link(P) // q, Inicialmente guarda la dirección del segundo nodo
+        r←Link(q) // r, Inicialmente guarda la dirección del tercer nodo
+        MQ (r <>  Nulo) Haga
+            Link(q)←P // Inicialmente, el segundo nodo se enlaza con el primero
+            P←q
+            q←r
+            r←Link(r)
+        F_MQ
+        Link(q)←P // En el ciclo anterior falto enlazar el ultimo nodo con el penúltimo
+        Link(PTR)←Nulo //Después de invertir los enlaces, el ultimo nodo se apunta a Nulo
+        PTR←q // El nuevo PTR va a ser el nodo apuntado  por q, es decir el ultimo  de la lista anterior
+    Sino
+        Escriba "Debe existir mínimo dos elementos para invertir una lista"
+    F_Si
+FIN-SUB
